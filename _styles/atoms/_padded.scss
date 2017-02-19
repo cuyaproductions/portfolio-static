@@ -1,9 +1,0 @@
-@mixin padded {
-	padding-left: 1em;
-	padding-right: 1em;
-
-	@include media-query(tablet) {
-		padding-left: 1em;
-		padding-right: 1em;
-	}
-}
