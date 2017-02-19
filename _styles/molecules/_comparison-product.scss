@@ -1,0 +1,122 @@
+.comparison-product {
+	text-align: center;
+
+	&__header {
+		@include padded;
+		@include lenovo-type;
+		display: block;
+		padding-top: 7rem;
+		padding-bottom: 0.5em;
+		position: relative;
+
+		vertical-align: bottom;
+
+		background-repeat: no-repeat;
+		background-position: bottom 2.5rem center;
+		background-size: auto 60%;
+
+		&:hover {
+			text-decoration: none;
+
+			&::before {
+				opacity: 1;
+			}
+			&::after {
+				opacity: 1;
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		// Overlay
+		&::before {
+			content: "";
+			
+			height: 100%;
+			width: 100%;
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			background-color: transparentize(color(black), 0.1);
+
+			opacity: 0;
+			transition: opacity $ANIMATION-DURATION ease-out;
+		}
+
+		&::after {
+			@include button;
+			content: "Explore";
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			color: color(white);
+
+			opacity: 0;
+			transform: translate(-50%, 30%);
+			transition: opacity $ANIMATION-DURATION ease-out, transform $ANIMATION-DURATION ease-out;
+		}
+
+		&--carbon {
+			background-color: color(black);
+			background-image: url("../imgs/index/carbon.png");
+		}
+		&--tablet {
+			background-color: color(red);
+			background-image: url("../imgs/index/tablet.png");
+		}
+		&--yoga {
+			background-color: color(slate);
+			background-image: url("../imgs/index/yoga.png");
+		}
+		&--thinkcentre {
+			color: color(black);
+			background-color: color(white);
+			background-image: url("../imgs/index/thinkcentre.png");
+		}
+	}
+
+	&__list {
+		margin: 0;
+		overflow: hidden;
+		padding-left: 0;
+
+		list-style: none;
+
+		background-color: color(gray);
+		color: color(black);
+	}
+
+	&__item {
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		height: 4.5rem;
+		justify-content: center;
+		padding: 0 2.6rem;
+		width: 100%;
+
+		border-bottom: 1px solid lighten(color(slate), 65%);
+	}
+
+	&__button {
+		@include button;
+		color: color(red);
+
+		&:hover {
+			color: color(white);
+			background-color: color(red);
+			border-color: color(red);
+		}
+	}
+
+
+	@include media-query(desktop) {
+		&__header {
+			padding-top: 12rem;
+			background-position: bottom 3.5rem center;
+		}
+	}
+}

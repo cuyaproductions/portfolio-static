@@ -1,0 +1,51 @@
+.personas {
+	background-color: black;
+
+	&__header {
+		padding: 4rem 2rem 2em;
+
+		background-color: color(red);
+		color: color(white);
+	}
+
+	&__title {
+		font-size: 1.7em;
+		text-align: center;
+		margin: 0;
+	}
+
+	&__content {
+		position: relative;
+		overflow-x: hidden;
+	}
+
+	&__list {
+		padding-left: 0;
+		list-style: none;
+		height: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	@include media-query(tablet) {
+		&__content {
+			height: 100vh; 
+		}
+
+		&__list {
+			width: 100%;
+			transition: all $ANIMATION-DURATION ease-out;
+			&--active {
+				width: 50%;
+			}
+		}
+
+		&__header {
+			padding: 2.4rem 2rem 0;
+		}
+
+		&__item {
+			height: 50%;
+		}
+	}
+}

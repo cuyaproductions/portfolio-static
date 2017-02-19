@@ -1,0 +1,9 @@
+<div class="canvas__container">
+	<h2 class="canvas__instructions">Explore</h2>
+	<div class="canvas__content">
+		<img class="canvas__image" src="../../imgs/products/{{meta.slug}}/main.png" alt="">
+		{{#each content.features as |feature|}}
+			<button class="canvas__node" data-target="{{@index}}" style="{{feature_coords}}">See Feature</button>
+		{{/each}}
+	</div>
+</div>

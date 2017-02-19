@@ -1,0 +1,87 @@
+.form {
+	$parent: &;
+
+	&__list {
+		padding-left: 0;
+		list-style: none;
+	}
+
+	&__label, &__legend {
+		@include lenovo-type;
+		padding: 0;
+		display: block;
+	}
+
+	&__fieldset {
+		margin-top: 2.3em;
+		padding: 1em 0;
+		border: none;
+	}
+
+	&__input {
+		font-family: inherit;
+		outline-color: auto;
+
+		&--text {
+			box-sizing: border-box;
+			display: block;
+			height: 3.2em;
+			margin-bottom: 1.2rem;
+			padding: 0.7em;
+			width: 100%;
+
+			appearance: none;
+			border: 1px solid color(black);
+		}
+
+		&--checkbox {
+			opacity: 0;
+			position: absolute;
+
+			&:focus {
+				+ #{$parent}__label {
+					outline: auto;
+					outline-color: rgb(59, 153, 252);
+				}
+			}
+
+			+ #{$parent}__label {
+				margin-bottom: 0.5em;
+
+				&::before {
+					content: "";
+
+					display: inline-block;
+					height: 1.3rem;
+					margin-right: 0.8em;
+					width: 1.3rem;
+
+					position: relative;
+					top: 0.3em;
+
+					border: 1px solid color(black);
+					box-shadow: inset 0 0 0 2px color(white);
+				}
+			}
+
+			&:checked {
+				
+				+ #{$parent}__label {
+					&::before {
+						background-color: color(black);
+					}
+				}
+			}
+		}
+	}
+
+	&__button {
+		@include button;
+		color: color(red);
+	}
+
+	@include media-query(tablet) {
+		
+	}
+
+}

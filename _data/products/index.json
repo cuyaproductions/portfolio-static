@@ -1,0 +1,12 @@
+{
+	"meta": {
+		"name": "Get More of What Matters Most",
+		"template": "split",
+		"slug": "intro",
+		"previous": "#",
+		"next": "products/carbon/"
+	},
+
+
+	"content": "<h1>Get More of What Matters Most</h1><p>With thoughtful design and precise innovation, the ThinkPad X1 family sets an entirely new standard for business technology. It unites end-user expectations with IT requirements in groundbreaking new ways. The result? The perfect mix of bold style, performance, and reliability—because your work deserves nothing less.</p><p><a href=\"carbon/\" class=\"button intro__button\">Take the tour</a></p>"
+}

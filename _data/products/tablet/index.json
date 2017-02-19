@@ -1,0 +1,11 @@
+{
+	"meta": {
+		"name": "ThinkPad X1 Tablet",
+		"slug": "tablet",
+		"template": "product",
+		"previous": "products/yoga/personas.html",
+		"next": "products/tablet/features.html"
+	},
+	
+	"content": {}
+}

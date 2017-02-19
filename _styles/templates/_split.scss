@@ -1,0 +1,36 @@
+.split {
+	&__content, &__slider {
+		box-sizing: border-box;
+		padding: 4rem  2.5rem;
+	}
+
+	&__slider {
+		background-color: color(red);
+	}
+
+	&__disclaimer {
+		font-size: 0.7em;
+		line-height: 0.5em;
+	}
+
+	@include media-query(tablet) {
+		&__container {
+			min-height: 100vh;
+			display: flex;
+		}
+
+		&__slider {
+			order: 1;
+		}
+
+		&__content, &__slider {
+			min-height: 100%;
+			padding: 4rem;
+			width: 50%;
+
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+<ul class="features__list">
+	<li><button id="features-close" class="features__close">Close feature</button></li>
+	{{#each content.features as |feature|}}
+		<li class="features__item feature">
+			<div class="feature__image" style="background-image: url('../../imgs/products/{{../meta.slug}}/features/feature{{@index}}.png')"></div>
+			<div class="feature__content">
+				<h4 class="feature__name h4">{{feature.name}}</h4>
+				<p class="feature__text">{{{feature.text}}}</p>
+				<a class="feature__button" href="personas.html">Why It Means Business</a>
+				<a class="feature__button" href="../../contact/">Purchase Device</a>
+			</div>
+		</li>
+	{{/each}}
+</ul>

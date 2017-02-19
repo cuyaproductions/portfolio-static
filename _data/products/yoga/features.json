@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"name": "ThinkPad X1 Yoga",
+		"slug": "yoga",
+		"template": "features",
+		"previous": "products/yoga/",
+		"next": "products/yoga/personas.html"
+	},
+	"content": {
+		"tagline": "Perfectly Prepared for Your Digital Day",
+		"text": "<p>Count on the Lenovo ThinkPad X1 Yoga for nonstop performance in your digital workday. The 2-in-1 device is designed for always-on productivity, powered by an Intel&reg; Core&trade; i7 vPro&trade; processor. With a versatile multimode design, LTE-A connectivity, and a brilliant OLED display, the possibilities are endless.</p><p>Get the flexibility that matters—and the power to handle any task at any time—with the ThinkPad X1 Yoga.</p>",
+
+		"features": [
+			{
+				"coordinates": {
+					"top": 11,
+					"right": 23
+				},
+				"name": "Do More with Multimode Freedom",
+				"text": "The ThinkPad X1 Yoga keeps you connected and ultra-productive, using the computing mode (Laptop, Tablet, Tent or Stand) that best fits your business needs. At just 2.8 lb./1.27 kg light and 0.7 inch/17.8 mm thin, the 2-in-1 convertible works the way you do."
+			},
+			{
+
+				"coordinates": {
+					"top": 30,
+					"left": 21
+				},
+				"name": "Experience Brilliance",
+				"text": "The ThinkPad X1 Yoga features a stunning 14-inch 2K (2560 x 1440) touchscreen display, with optional OLED technology. It enables your work, videos, photos, and web pages to look better than ever with richer colors and sharper contrast."
+			},
+			{
+				"coordinates": {
+					"bottom": 22,
+					"right": 6
+				},
+				"name": "Collaborate with Ease",
+				"text": "In addition to its vibrant display, the ThinkPad X1 Yoga comes with VOIP-optimized A/V features and optional LTE-A wireless connectivity—for easy collaboration across the table or around the world. Plus, it’s powered by up to 11 hours of battery life."
+			},
+			{
+				"coordinates": {
+					"bottom": 6,
+					"left": 23
+				},
+				"name": "Business-Ready Durability",
+				"text": "The ThinkPad X1 Yoga delivers the deep dependability required by modern business. The innovative form factor has endured military-grade durability testing, and features both scratch- and spill-resistant displays and keyboards."
+			}
+		]
+	}
+}

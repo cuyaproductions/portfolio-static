@@ -1,0 +1,11 @@
+{
+	"meta": {
+		"name": "Thinkcentre X1",
+		"slug": "thinkcentre",
+		"template": "product",
+		"previous": "products/tablet/presonas.html",
+		"next": "products/thinkcentre/features.html"
+	},
+	
+	"content": {}
+}

@@ -1,0 +1,95 @@
+.navigation {
+	$parent: &;
+
+	background-color: color(black);
+	color: color(white);
+
+	&--active {
+		#{$parent}__list {
+			max-height: 22rem;
+		}
+		#{$parent}__button {
+			background-image: url('../imgs/ui/arrow-up.svg');		
+			background-color: color(black);
+		}
+	}
+
+	&__button {
+		height: 3.9em;
+		overflow: hidden;
+		width: 4.2em;
+
+		text-indent: -9999em;
+
+		background-image: url("../imgs/ui/menu-white.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		border: none;
+	}
+
+	&__list {
+		max-height: 0;
+		margin: 0;
+		overflow: hidden;
+		padding-left: 0;
+
+		list-style: none;
+		text-align: center;
+
+		transition: max-height $ANIMATION-DURATION ease-out;
+	}
+
+
+	&__link {
+		@include lenovo-type;
+		display: block;
+		padding: 1.1rem 0.5rem;
+		font-size: 0.85em;
+		border-bottom: 1px solid color(slate);
+
+		transition: background-color $ANIMATION-DURATION;
+
+		&:hover, &--active {
+			border-bottom: 1px solid color(black);
+			background-color: color(slate);
+			text-decoration: none;
+		}
+	}
+	
+	@include media-query(tablet) {
+		margin-bottom: 0;
+		width: 100%;
+
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+
+		&__button {
+			display: none;
+		}
+
+		&__list {
+			display: flex;
+			height: auto;
+			max-height: none;
+		}
+
+		&__link {
+			padding: 0.7rem 0.5rem;
+		}
+
+		&__item {
+			flex: 1 1 auto;
+
+			#{$parent}__link {
+				border-bottom: none;
+				border-left: 1px solid color(slate);
+
+				&:hover, &--active {
+					border-left: 1px solid color(black);
+				}
+			}
+		}
+	}
+}

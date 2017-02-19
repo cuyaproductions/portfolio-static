@@ -1,0 +1,25 @@
+.slide {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+
+	&__image {
+		margin-bottom: 0.2em;
+		max-height: 12rem;
+		max-width: 100%;
+	}
+
+	&__caption {
+		@include lenovo-type;
+		color: color(white);
+		font-size: 1.3em;
+	}
+
+	@include media-query(tablet) {
+		&__image {
+			max-width: 80%;
+			max-height: 17rem;
+		}
+	}
+	
+}

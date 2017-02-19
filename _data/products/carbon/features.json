@@ -1,0 +1,48 @@
+{
+	"meta": {
+		"name": "ThinkPad X1 Carbon",
+		"slug": "carbon",
+		"template": "features",
+		"previous": "products/carbon/",
+		"next": "products/carbon/personas.html"
+	},
+	"content": {
+		"tagline": "The device that gets down to business",
+		"text": "<p>Ultra-light, ultra-tough, and built for business. The Lenovo ThinkPad X1 Carbon Ultrabook delivers serious style and substance for enterprise computing. Discover a bold design that’s backed by powerful performance—featuring an Intel&reg; Core&trade; i7 vPro&trade; processor, integrated security and military-grade durability.</p><p>Empower your business, IT, and end-users with the deeply personal and powerfully productive ThinkPad X1 Carbon.</p>",
+
+		"features": [
+			{
+				"coordinates": {
+					"top": 7,
+					"right": 16
+				},
+				"name": "Performance with style",
+				"text": "The 14-inch ThinkPad X1 Carbon combines a distinctive design with a breakthrough performance architecture. It delivers supercharged technology that’s built to impress, powered by an Intel Core i7 vPro processor and ultrafast PCIe SSD storage."
+			},
+			{
+				"coordinates": {
+					"bottom": 8,
+					"left": 4
+				},
+				"name": "Anywhere, Anytime Productivity",
+				"text": "Starting at just 2.6 lbs./1.18 kg and 0.65 inch/16.5 mm thin, the ThinkPad X1 Carbon is extremely portable. Plus, it provides up to 11 hours of battery life and optional LTE-A connectivity—enabling serious productivity from virtually anywhere."
+			},
+			{
+				"coordinates": {
+					"bottom": 8,
+					"right": 9
+				},
+				"name": "Powerfully Secure and Manageable",
+				"text": "The ThinkPad X1 Carbon keeps your data safer than ever, while also simplifying IT support. It comes with the Touch Sensor Fingerprint Reader, as well as robust hardware-assisted security features such as Trusted Platform Module (TPM) support."
+			},
+			{
+				"coordinates": {
+					"top": 18,
+					"left": 19.5
+				},
+				"name": "Real-World Durability",
+				"text": "Rigorously tested. Built to military-grade specifications. The ThinkPad X1 Carbon can withstand the hazards of everyday, everywhere computing. Features include a satellite-grade carbon fiber frame, spill-resistant keyboard, and shatter-resistant glass."
+			}
+		]
+	}
+}

@@ -1,0 +1,7 @@
+.logo {
+	width: 48px;
+
+	@include media-query(tablet) {
+		width: 107px;
+	}
+}

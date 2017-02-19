@@ -1,0 +1,11 @@
+{
+	"meta": {
+		"name": "ThinkPad X1 Yoga",
+		"slug": "yoga",
+		"template": "product",
+		"previous": "products/carbon/personas.html",
+		"next": "products/yoga/features.html"
+	},
+	
+	"content": {}
+}

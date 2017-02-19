@@ -1,0 +1,39 @@
+.nav-button {
+	height: 3rem;
+	overflow: hidden;
+	width: 2rem;
+
+	position: fixed;
+	top: calc(50vh - 2.3rem);
+	z-index: 1;
+
+	text-indent: -99999em;
+
+	background-color: color(slate);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+	color: white;
+
+	&:hover {
+		background-color: lighten(color(slate), 15%);
+	}
+
+	&--next {
+		right: 0;
+		background-image: url('../imgs/ui/arrow-next.svg');
+	}
+
+	&--previous {
+		left: 0;
+		background-image: url('../imgs/ui/arrow-previous.svg');
+	}
+
+	@include media-query(tablet) {
+		height: 4.6rem;
+		width: 2.8rem;
+
+		background-size: auto;
+	}
+}
+

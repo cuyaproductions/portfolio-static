@@ -1,0 +1,9 @@
+.intro {
+	&__button {
+		&:hover {
+			color: color(white);
+			background-color: color(red);
+			border-color: color(red);
+		}
+	}
+}

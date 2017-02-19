@@ -1,0 +1,29 @@
+{{> header }}
+	{{> nav-arrows }}
+	{{> nav }}
+		<div class="personas__container">
+			<header class="personas__header">
+				<h1 class="personas__title">The {{meta.name}} is for:</h1>
+			</header>
+			<div class="personas__content">
+				<ul id="personas" class="personas__list">
+					{{#each content.personas as |persona|}}
+						<li class="personas__item persona" id="persona-{{persona.slug}}">
+							<div class="persona__tile" style="background-image: url('../../imgs/personas/{{persona.slug}}.png')">
+							<div class="persona__overlay" style="background-image: url('../../imgs/personas/{{persona.slug}}-red.png')"></div>
+								<button class="persona__button" data-target="{{persona.slug}}">The {{persona.name}}</button>
+							</div>
+							<div class="persona__description" >
+								<div>
+									<button id="persona-close" class="persona__close">Close</button>
+									<h2 class="persona__name">The {{persona.name}}</h2>
+									<p class="persona__text">{{persona.text}}</p>
+									<a class="persona__cta" href="../../contact/">Purchase Device</a>
+								</div>
+							</div>
+						</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+{{> footer}}
