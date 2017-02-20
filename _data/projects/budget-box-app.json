@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "City of Austin Budget in a Box",
+    "template": "project",
+    "images": ["budget-tablet.jpg", "budget-mobile.png", "budget-desktop.jpg"],
+    "demo_link": "http://budgetboxapp.com/",
+    "github_link": "https://github.com/whgest/budgetbox",
+    "roles": ["Front-end Development", "Design"],
+    "tools": ["Ember.js", "Less", "Illustrator", "InVision"],
+    "next": "civic-tech-canvas"
+  },
+
+  "content": "<h3>Problem</h3> <p>The Budget in a Box board game is a project developed by the City of Austin in 2013 to collect feedback from residents on their priorities in regards to the city budget for the following fiscal year. Having seen great success with the game, the Office of Public Information wanted to bring the experience to the digital world to increase public engagement.</p> <h3>Solution</h3> <p>I helped develop a mobile-friendly web application that used the same increase/decrease/maintain budget feedback mechanism of the board game. This feedback was then collected by the city to report to City Council and the public.</p> <h3>Outcome</h3> <p>The digital Budget in a Box resulted in a 214% increase in online public engagement, and we received an award of recognition from Mayor Adler on October 1, 2015.</p>"
+}

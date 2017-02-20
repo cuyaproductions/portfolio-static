@@ -1,30 +1,16 @@
-{{> header bodyClass="index"}}
-	{{> nav-arrows}}
-	{{> nav }}
-		<div class="index__container">
-			<header class="index__header">
-				<h1 class="index__title">{{meta.name}}</h1>
-				<a href="products/" class="index__button">Get More Of What Matters Most</a>
-			</header>
-
-			<section id="comparison" class="index__content comparison">
-				<div class="comparison__title">Compare Products</div>
-				<button id="comparison-button" class="comparison__button">Compare</button>
-				<div class="comparison__table">
-					{{#each content.comparisons as |product|}}	
-						<div class="comparison__column comparison-product">
-							<a href="products/{{slug}}/" class="comparison-product__header comparison-product__header--{{product.slug}}">{{product.name}}</a>
-							<div class="comparison-product__info">
-								<ul id="comparison-list" class="comparison-product__list">
-									{{#each product.features as |feature|}}
-										<li class="comparison-product__item">{{{feature}}}</li>
-									{{/each}}
-									<li class="comparison-product__item"><a class="comparison-product__button" href="products/{{product.slug}}/">View Product</a></li>
-								</ul>
-							</div>
-						</div>
-					{{/each}}
-				</div>
-			</section>
-		</div>
+{{> header }}
+<div class="intro container">
+  <h2 class="intro__name animation animation--slide-over">Hello, my name is Diego Hernandez</h2>
+  <h1 class="intro__headline animation animation--slide-over animation--delay-1">I code and design to make this world a better place.</h1>
+  <nav class="animation animation--slide-over animation--delay-2">
+    <ul>
+      <li>
+        <a href="{{relative_link '/about'}}">Learn about me</a>
+      </li>
+      <li>
+        <a href="{{relative_link '/projects'}}">See my work</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 {{> footer}}

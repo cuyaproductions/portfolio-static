@@ -1,0 +1,13 @@
+{{> header}}
+<div class="projects container container--padded-top">
+  {{> navigation}}
+  <h1>{{meta.title}}.</h1>
+  <ul class="projects__list">
+    {{#each content.projects as |project|}}
+      <li class="projects__item">
+        <a class="projects__link" href="/projects/{{project.slug}}.html">{{project.title}}</a>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+{{> footer}}

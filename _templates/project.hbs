@@ -1,0 +1,42 @@
+{{> header}}
+<div class="projects container container--padded-top">
+  {{> navigation}}
+  <h1>{{meta.title}}.</h1>
+  {{#if meta.images}}
+    <div class="project__images">
+      {{#each meta.images as |image|}}
+        <img src="/imgs/projects/{{image}}" alt="">
+      {{/each}}
+    </div>
+  {{/if}}
+  <div class="project__content">
+    <nav class="project__navigation">
+      {{#if meta.demo_link}}
+        <a href="{{meta.demo_link}}" target="_blank" class="project__link">See live project</a>
+      {{/if}}
+      {{#if meta.github_link}}
+        <a href="{{meta.github_link}}" target="_blank" class="project__link">View code on Github</a>
+      {{/if}}
+    </nav>
+
+    {{{content}}}
+  </div>
+  <aside class="project__aside">
+    <h3>My role</h3>
+    <ul>
+      {{#each meta.roles as |role|}}
+        <li>{{role}}</li>
+      {{/each}}
+    </ul>
+    <h3>Tools I used</h3>
+    <ul>
+      {{#each meta.tools as |tool|}}
+        <li>{{tool}}</li>
+      {{/each}}
+    </ul>
+    {{#if meta.next}}
+    <a href="/projects/{{meta.next}}.html" class="button project__next">Next Project</a>
+    {{/if}}
+  </aside>
+</div>
+{{> footer}}

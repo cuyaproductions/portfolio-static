@@ -1,58 +1,6 @@
 {
-	"meta": {
-		"name": "Meet The Thinkpad X1 Family",
-		"template": "index",
-		"next": "products/"
-	},
-
-	"content": {
-		"comparisons": [{
-			"name": "X1 Carbon",
-			"slug": "carbon",
-			"color": "black",
-			"features": [
-				"Ultrabook laptop",
-				"&lt;0.65\" (16.45 mm) thin and 2.6 lb. (1.18 kg) light",
-				"Up to Intel&reg; Core&trade; i7 vPro&trade; processor",
-				"LTE-A, Wi-Fi, NFC, WiDi, Miracast, Bluetooth",
-				"WiGig docking"
-			]
-		},
-		{
-			"name": "X1 Tablet",
-			"slug": "tablet",
-			"color": "red",
-			"features": [
-				"Tablet",
-				"Thin, magnetic keyboard",
-				"Up to Intel&reg; Core&trade; iM vPro&trade; processor",
-				"LTE-A, 3G, Wi-Fi",
-				"WiGig docking; task-driven upgrade modules"
-			]
-		},
-		{
-			"name": "X1 Yoga",
-			"slug": "yoga",
-			"color": "slate",
-			"features": [
-				"2-in-1 convertible",
-				"Four distinct computing modes",
-				"Up to Intel&reg; Core&trade; i7 vPro&trade; processor",
-				"LTE-A, Wi-Fi, Bluetooth",
-				"WiGig docking"
-			]
-		},
-		{
-			"name": "Thinkcentre X1",
-			"slug": "thinkcentre",
-			"color": "white",
-			"features": [
-				"All-in-one desktop",
-				"Slim, sleek, clutter-free single cord design",
-				"Up to Intel&reg; Core&trade; i7 vPro&trade; processor",
-				"Wi-Fi, Ethernet, Bluetooth",
-				"Wireless ThinkPad keyboard/mouse"
-			]
-		}]
-	}
+  "meta": {
+    "name": "Diego Hernandez",
+    "template": "index"
+  }
 }

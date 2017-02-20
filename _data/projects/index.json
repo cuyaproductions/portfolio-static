@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "My Work",
+    "template": "projects"
+  },
+  "content": {
+    "projects": [
+      {
+        "slug": "austin-econetwork",
+        "title": "Austin EcoNetwork Notes"
+      },
+      {
+        "slug": "civic-tech-canvas",
+        "title": "Civic Tech Project Canvas"
+      },
+      {
+        "slug": "budget-box-app",
+        "title": "City of Austin Budget in a Box"
+      },
+      {
+        "slug": "habanero",
+        "title": "Habanero CSS Framework"
+      }
+    ]
+  }
+}

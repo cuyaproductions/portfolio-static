@@ -8,8 +8,8 @@
 
     "server": "live-server ./_build",
 
-		"clear": "rm -fr _build",
-		"postclear": "mkdir _build",
+    "clear": "rm -fr _build",
+    "postclear": "mkdir _build",
 
     "prebuild": "npm run clear",
     "build": "npm run html && npm run css && npm run js && npm run img",
@@ -22,7 +22,7 @@
     "watch:js": "nodemon -e js -w _scripts -x npm run js",
     "watch:img": "nodemon -w _imgs -x npm run img",
 
-		"html": "node index.js",
+    "html": "node index.js",
 
     "precss": "mkdir -p _build/styles",
     "css": "node-sass _styles/main.scss  _build/styles/main.css",
